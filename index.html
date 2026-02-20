@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Labs | Innovative Software Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 建筑师极简黑白风格 */
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* 添加类似建筑图纸的细网格背景 */
+        .grid-bg {
+            background-image: linear-gradient(#f0f0f0 1px, transparent 1px), linear-gradient(90deg, #f0f0f0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-black selection:text-white grid-bg">
+
+    <!-- 导航栏 (顶部结构线) -->
+    <nav class="w-full p-6 flex justify-between items-center max-w-6xl mx-auto border-b-2 border-black bg-white/80 backdrop-blur-sm">
+        <div class="text-xl font-black tracking-widest uppercase flex items-center gap-3">
+            <!-- 极简几何 Logo (建筑平面图概念) -->
+            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" stroke-width="2"></rect>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h18M12 3v18"></path>
+            </svg>
+            Some Labs
+        </div>
+        <div class="text-xs font-mono uppercase tracking-widest text-gray-500">
+            London, UK // EST. 2026
+        </div>
+    </nav>
+
+    <!-- 主体内容 -->
+    <main class="flex-grow flex flex-col justify-center items-center px-6 py-16 text-center max-w-4xl mx-auto">
+        
+        <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 text-black leading-none">
+            Crafting<br />Digital Structure.
+        </h1>
+        
+        <p class="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed font-light max-w-2xl">
+            Some Labs is an independent software development studio based in the UK. We focus on building precise mobile applications and structural digital tools.
+        </p>
+
+        <!-- 联系卡片 (极简硬切角线框) -->
+        <div class="border-2 border-black p-10 w-full max-w-md bg-white">
+            <h2 class="text-lg font-black uppercase tracking-widest mb-2 text-black">Get in Touch</h2>
+            <p class="text-gray-500 text-sm mb-8 font-mono">For business inquiries & support.</p>
+            
+            <a href="mailto:hello@somelabs.co" class="inline-flex items-center justify-center w-full px-6 py-4 border-2 border-black text-sm font-bold uppercase tracking-widest text-white bg-black hover:bg-white hover:text-black transition-colors duration-300">
+                hello@somelabs.co
+            </a>
+        </div>
+
+    </main>
+
+    <!-- 页脚 (底部结构线) -->
+    <footer class="w-full py-8 border-t-2 border-black mt-auto bg-white">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-mono uppercase text-gray-500 tracking-wider">
+            
+            <div class="font-bold text-black">
+                &copy; 2026 SOMELABS LTD.
+            </div>
+
+            <div class="text-center md:text-left">
+                123 Example Street, London, UK, W1D 4EB
+            </div>
+
+            <div class="flex gap-6">
+                <a href="#privacy" class="hover:text-black transition-colors">Privacy</a>
+                <a href="#support" class="hover:text-black transition-colors">Support</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
